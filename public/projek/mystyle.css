@@ -1,0 +1,60 @@
+:root {
+  --navbar-bg-light: #ffffff; /* Warna navbar terang */
+  --navbar-bg-dark: #333333;  /* Warna navbar gelap */
+  
+  --sidebar-bg-light: #f0f0f0; /* Warna sidebar terang */
+  --sidebar-bg-dark: #444444;  /* Warna sidebar gelap */
+  
+  --content-bg-light: #f8f9fa; /* Warna content terang */
+  --content-bg-dark: #1e1e1e;  /* Warna content gelap */
+  
+  --text-color-light: #000000;
+  --text-color-dark: #ffffff;
+}
+
+body.light-mode {
+  background-color: var(--content-bg-light);
+  color: var(--text-color-light);
+}
+
+body.dark-mode {
+  background-color: var(--content-bg-dark);
+  color: var(--text-color-dark);
+}
+
+/* Navbar styles */
+.navbar-light-mode {
+  background-color: var(--navbar-bg-light) !important;
+  color: var(--text-color-light) !important;
+}
+
+.navbar-dark-mode {
+  background-color: var(--navbar-bg-dark) !important;
+  color: var(--text-color-dark) !important;
+}
+
+/* Sidebar styles */
+.sidebar-light-mode {
+  background-color: var(--sidebar-bg-light) !important;
+  color: var(--text-color-light) !important;
+}
+
+.sidebar-dark-mode {
+  background-color: var(--sidebar-bg-dark) !important;
+  color: var(--text-color-dark) !important;
+}
+
+/* Content area */
+.content {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.content-light-mode {
+  background-color: var(--content-bg-light);
+  color: var(--text-color-light);
+}
+
+.content-dark-mode {
+  background-color: var(--content-bg-dark);
+  color: var(--text-color-dark);
+}
