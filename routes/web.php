@@ -28,3 +28,15 @@ Route::get('setting', function () {
 Route::get('noshift', function () {
     return view('noshift');
 });
+Route::get('pegawai', function () {
+    return view('pegawai');
+});
+Route::get('addpegawai', function () {
+    return view('addpegawai');
+});
+Route::get('absensi', function () {
+    return view('absensi');
+});
+Route::get('addabsensi', function () {
+    return view('addabsensi');
+});

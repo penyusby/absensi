@@ -14,8 +14,9 @@
         </div>
         <div class="card">
             <div class="card-header">
+                <!-- Header konten -->
             </div>
-            <div class="card-body">
+            <div class="card-body bg-secondary text-white"> <!-- Menambahkan kelas bg-secondary dan text-white -->
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Filter</button>
@@ -60,7 +61,6 @@
                 <button class="btn btn-primary">Simpan</button>
             </div>
         </div>
-    </div>
-    
+            </div>  
 </div>
 @endsection

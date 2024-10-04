@@ -58,3 +58,7 @@ body.dark-mode {
   background-color: var(--content-bg-dark);
   color: var(--text-color-dark);
 }
+.bg-dark-gray {
+  background-color: #6c757d; /* Warna abu-abu gelap */
+  color: white; /* Warna teks putih */
+}
