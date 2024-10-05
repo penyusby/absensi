@@ -1,7 +1,8 @@
 <?php
 
+use App\Http\Controllers\PegawaiController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\UserControllers;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,12 +29,18 @@ Route::get('setting', function () {
 Route::get('noshift', function () {
     return view('noshift');
 });
-Route::get('pegawai', function () {
-    return view('pegawai');
-});
-Route::get('addpegawai', function () {
-    return view('addpegawai');
-});
+// Route::get('pegawai', function () {
+//     return view('pegawai');
+// });
+// Route::get('addpegawai', function () {
+//     return view('addpegawai');
+// });
+Route::get('/pegawai', [PegawaiController::class, 'index']);
+Route::get('/addpegawai', [PegawaiController::class, 'create']);
+Route::post('/addpegawai', [PegawaiController::class, 'store']);
+Route::get('/editpegawai/{id}', [PegawaiController::class, 'edit']);
+Route::post('/update/{id}', [PegawaiController::class, 'update']);
+
 Route::get('absensi', function () {
     return view('absensi');
 });
